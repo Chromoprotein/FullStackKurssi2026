@@ -1,0 +1,23 @@
+{
+  "name": "fsuusimaa2026kesa",
+  "version": "1.0.0",
+  "description": "hello world",
+  "homepage": "https://github.com/Wantonius/FSUusimaa2026Kesa#readme",
+  "bugs": {
+    "url": "https://github.com/Wantonius/FSUusimaa2026Kesa/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wantonius/FSUusimaa2026Kesa.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Guess Game</title>
+        <meta charset="UTF-8" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <button id="newGameButton">New game</button>
+        <p>
+            Guess the number.
+            Tip: the number is between 
+            <span id="min">0</span>
+            and
+            <span id="max">100</span>
+        </p>
+        <p>
+            You have guessed
+            <span id="counter">0</span>
+            times.
+        </p>
+        
+        <form id="guessForm">
+            <input id="guess" type="number" />
+            <input type="submit" value="Guess" />
+        </form>
+
+        <p id="result"></p>
+    </body>
+</html>

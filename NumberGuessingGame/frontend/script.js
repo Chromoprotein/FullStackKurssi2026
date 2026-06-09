@@ -44,36 +44,38 @@ function startNewGame() {
     const maxText = document.getElementById("max");
     const count = document.getElementById("counter");
 
-    return {
+    const game = {
         answer: Math.floor(Math.random() * 100) + 1,
         min: 0,
         max: 100,
         count: 0,
-        checkGuess(guess) {
+        checkGuess: function(guess) {
             // Increment the count
-            this.count += 1;
-            count.textContent = this.count;
+            game.count += 1;
+            count.textContent = game.count;
 
             // If the guess was too small
-            if(guess < this.answer) {
+            if(guess < game.answer) {
                 // Update the minimum
-                this.min = guess;
+                game.min = guess;
                 // Update the displayed range
-                minText.textContent = this.min+1;
+                minText.textContent = game.min+1;
                 return "Your guess was too small";
             }
             // If the guess was too big
-            else if(guess > this.answer) {
+            else if(guess > game.answer) {
                 // Update the maximum
-                this.max = guess;
+                game.max = guess;
                 // Update the displayed range
-                maxText.textContent = this.max-1;
+                maxText.textContent = game.max-1;
                 return "Your guess was too big";
             }
             // If the guess was correct
             return "Correct!";
         }
     }
+
+    return game;
 }
 
 function handleGuess(val) {
